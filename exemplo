@@ -20,3 +20,33 @@ int main(){
     system("pause");
     return 0;
 }
+Gustavo      2.5
+Maria        5.0
+Ao todo temos 2 alunos acima da média da turma que é 5.8
+CÓDIGO ABAIXO:
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+ int main ()
+ {
+   int i,total;
+   char nome[4];
+   float n1[4],n2[4],mediaaluno[4],somamedia,mediaturma;
+   
+    for ( i = 1; i <=4; i++)
+    {
+      printf("\nAluno %d:",i);
+      scanf("%s", &nome[i]);
+
+      printf("\nPrimeira nota:");
+      scanf("%f", &n1[i]);
+
+      printf("\nSegunda nota:");
+      scanf("%f", &n2[i]);
+
+      mediaaluno[i] = (n1[i] + n2[i])/ 2;
+
+      somamedia = somamedia + mediaaluno[i];
+    } 
